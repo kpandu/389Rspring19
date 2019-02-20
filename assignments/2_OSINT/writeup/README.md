@@ -27,7 +27,7 @@ I found CMSC389R-{brut3_f0rce_m4ster} by using the python script in part 2. This
 
 6. I found what ports were open by using the nmap command on the website. This initially only returned ports 80 and 22 which were open. The service behind port 80 is http and behind port 22 is ssh. Therefore I had to expand the range to find more open ports which led me to port 1337 which was open and the right port I needed to access for part 2. The service behind port 1337 is "waste."
 
-7. The website is running on the OS Ubuntu. I found this by putting the IP 142.93.136.81 on the website censys.io . 
+7. The website is running on the OS Ubuntu. I found this by putting the website's IP 142.93.136.81 on the website censys.io . 
 
 8. BONUS: Did you find any other flags on your OSINT mission? (Up to 9 pts!)
 I found CMSC389R-{h1dd3n_1n_plain_5ight} which was found through the HTML code on her website in a comment.
