@@ -16,7 +16,7 @@ Digital acknowledgement: Krishan Panduwawala
 
 2. She is the Banking CEO at the website http://1337bank.money/. I found this in her Twitter bio.
 
-3. Elizabeth has a Twitter which I found by googling v0idcache. She has some connection with the fl1nch which was found through a pastebin associated with v0idcache.
+3. Elizabeth has a Twitter which I found by googling v0idcache. She has some connection with the fl1nch which was found through a pastebin associated with v0idcache from a Google search.
 
 4. I found 142.93.136.81 by going to https://securitytrails.com/dns-trails and looking up the URL of the website.
 The location of the server is in the Netherlands in Amsterdam which I found through putting the website’s IP address in Censys.io. The same website also shows that 162.255.119.56 is in the historical data associated with her website. Also the website has a routing IP: 142.93.128.0/20 also found on Censys.io.
