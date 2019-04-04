@@ -20,7 +20,7 @@ Digital acknowledgement: Krishan Panduwawala
 4. They are using port 20. Found when clicking on the packets when the greetz.fpff and find_me.jpeg were transferred between the server and the hackers.
 
 5. 
-    a) A photo called find_me.jpeg. The type of the file is jpeg. I downloaded the raw version of the file using WireShark. Then I was able to change the file type to jpg which let me see the photo. 
+    a) A photo called find_me.jpeg. The type of the file is jpeg. I downloaded the raw version of the file using WireShark. Then I was able to change the file type to jpg which let me see the photo. There were logs that showed the hackers logging in as v0idcache and the logs show that the hackers recieved the file from the server. They then stored greetz.fpff in the same logs.
 
     b) The photo was taken at the beach which I found from the photo. I saw a large hand sculpture coming from the sand. I then searched up beaches with hand sculpture coming out of the sand. This brought me to beach called “La Mano (the hand)” which matched the hand statue exactly. The state of the sculpture is in Uruguay and the city is Punta del Este.
 
