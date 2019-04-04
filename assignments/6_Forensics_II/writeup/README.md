@@ -14,8 +14,8 @@ Digital acknowledgement: Krishan Panduwawala
 2. 
     i) They are using command injection. This is shown  as the server’s response is “PORT 159,203,113,181,222,226” which meant the hackers were trying multiple ports. Then the server says “PORT command successful” which meant that the hackers were trying command injection on multiple ports until the command succeeded.
 
-    ii) vsFTPd 3.03 which was at the top of the logs between the hackers and the server. They used this to transfer files.
-3. Their ip is 159.203.113.181 which I found from the source to destination ip addresses since I knew the ip of the website. I found the file that the hackers stole and the destination IP from the server was the hackers’ IP. By putting the ip in Censys.io, I know that the hackers’ are connecting from Clifton, New Jersey
+    ii) vsFTPd 3.03 is the tool they are using which was at the top of the logs between the hackers and the server. They used this to transfer files.
+3. Their ip is 159.203.113.181 which I found from the source to destination ip addresses since I knew the ip of the website. I knew this was the IP based on the packet logs and also the fact that they were recieving and storing files from this IP. I found the file that the hackers stole and the destination IP from the server was the hackers’ IP. By putting the ip in Censys.io, I know that the hackers’ are connecting from Clifton, New Jersey
 
 4. They are using port 20. Found when clicking on the packets when the greetz.fpff and find_me.jpeg were transferred between the server and the hackers.
 
