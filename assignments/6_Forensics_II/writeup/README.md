@@ -12,9 +12,10 @@ Digital acknowledgement: Krishan Panduwawala
 ### Part 1 (45 Pts)
 1. 142.93.136.81
 2. 
-    i) They are using command injection. This is shown  as the server’s response is “PORT 159,203,113,181,222,226” which meant the hackers were trying multiple ports. Then the server says “PORT command successful” which meant that the hackers were trying command injection on multiple ports until the command succeeded.
+    i) The tool they used was nmap as they scanned multiple ports which was shown in the logs in WireShark between the hackers and the server. They scanned the ports to see which port they could get into.
+    ii) They are using netcat (nc) to get into the file system since they connect to the ip on a specific port. Then they log in with v0idcache's credentials (in WireShark logs when you follow TCP stream) which is evidence that they used netcat to run the service behind the port which was to log in to the file system.
 
-    ii) vsFTPd 3.03 is the tool they are using which was at the top of the logs between the hackers and the server. They used this to transfer files.
+
 3. Their ip is 159.203.113.181 which I found from the source to destination ip addresses since I knew the ip of the website. I knew this was the IP based on the packet logs and also the fact that they were recieving and storing files from this IP. I found the file that the hackers stole and the destination IP from the server was the hackers’ IP. By putting the ip in Censys.io, I know that the hackers’ are connecting from Clifton, New Jersey
 
 4. They are using port 20. Found when clicking on the packets when the greetz.fpff and find_me.jpeg were transferred between the server and the hackers.
