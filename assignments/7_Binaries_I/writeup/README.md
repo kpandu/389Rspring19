@@ -1,12 +1,12 @@
 # Writeup 7 - Binaries I
 
-Name: *PUT YOUR NAME HERE*
-Section: *PUT YOUR SECTION NUMBER HERE*
+Name: *Krishan Panduwawala*
+Section: *0201*
 
 I pledge on my honor that I have not given or received any unauthorized
 assistance on this assignment or examination.
 
-Digital acknowledgement: *PUT YOUR NAME HERE*
+Digital acknowledgement: *Krishan Panduwawala*
 
 ## Assignment Writeup
 
@@ -14,9 +14,24 @@ Digital acknowledgement: *PUT YOUR NAME HERE*
 
 *Put your code here as well as in main.c*
 ```c
-printf("your code here");
+printf("
+#include <stdio.h>
+int main() {
+    int x = 0x1ceb00da;
+    int y = 0xfeedface;
+    printf("%d\n", x);
+    printf("%d\n", y);
+    x = x^y;
+    y = y^x;
+    x = x^y;
+
+    printf("%d\n", x);
+    printf("%d\n", y);
+    return 0;
+}"
+);
 ```
 
 ### Part 2 (10 Pts)
 
-*Replace this text with your repsonse to our prompt for part 2!*
+The program first prints the two numbers: 0x1ceb00da and 0xfeedface . Then the program uses bitwise exclusive or to swap the two numbers and print the swapped result.
