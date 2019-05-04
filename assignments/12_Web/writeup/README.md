@@ -1,18 +1,19 @@
 # Crypto II Writeup
 
-Name: *PUT YOUR NAME HERE*
-Section: *PUT YOUR SECTION NUMBER HERE*
+Name: Krishan Panduwawala
+Section: 0201
 
 I pledge on my honor that I have not given or received any unauthorized
 assistance on this assignment or examination.
 
-Digital acknowledgement: *PUT YOUR NAME HERE*
+Digital acknowledgement:  Krishan Panduwawala
 
 ## Assignment Writeup
 
 ### Part 1 (40 Pts)
 
 ### Part 2 (60 Pts)
+"
 Level 1:
 The first level asked to inject a script that causes the Javascript alert() pop
 up to be invoked through the search box. I initially tried 'asd' in the the search box
@@ -61,3 +62,4 @@ In the HTML is
  I expolited the google.com/jsapi?callback=f vulnerability as it invokes the function associated with the callback. 
  If we replace f in the url above with alert and visit the link  google.com/jsapi?callback=alert , there is a bunch of data and at the bottom is
  alert(); which means it is invoked. Therefore we use the url https://xss-game.appspot.com/level6/frame#//www.google.com/jsapi?callback=alert which will use the vulnerability and invoke the alert function. It popped up as undefined since I did not pass in any string. This vulnerability works since we can load the data from google.com/jsapi?callback=alert instead of a gadget. I got this with the help from the hints and by messing with the url it provided.
+ "
