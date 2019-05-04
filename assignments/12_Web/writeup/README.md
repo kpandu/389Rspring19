@@ -13,10 +13,10 @@ Digital acknowledgement:  Krishan Panduwawala
 ### Part 1 (40 Pts)
 
 ### Part 2 (60 Pts)
+NOTE: Please view Raw since I used HTML in the writeup.
 
-Level 1:
 
-The first level asked to inject a script that causes the Javascript alert() pop
+Level 1:The first level asked to inject a script that causes the Javascript alert() pop
 up to be invoked through the search box. I initially tried 'asd' in the the search box
 and it brought me to page where it says "Sorry, no results were found for asd. Try again." This immediately told me that the input from the search box is converted into HTML code and the input becomes embeded in the next page. This means I can write direct HTML code and the search box would convert the input into HTML code that would be executed. I then wrote in the search box "<script>alert('hi')</script>" which executed the alert() pop up. The site then said 'Congratulations, you have executed an alert: hi.'
 
