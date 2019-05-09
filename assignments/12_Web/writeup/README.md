@@ -11,7 +11,7 @@ Digital acknowledgement:  Krishan Panduwawala
 ## Assignment Writeup
 
 ### Part 1 (40 Pts)
-We know that each item is being looked up in a database and that the url is being used to query the item. At the end of the url when you select an item is "item?id=0" in which the number 0 is used in the SQL query for the data base. Therefore we can modify the url to inject more SQL code that will return all the items. The SQL command done is like "SELECT item from Items where ID equal '?'" where ? is the id number in the url. Therfore we can close the single quote in the url and continue the SQL code and then comment out the rest of the code. I added a SQL query that is always true which was OR 1=1 which brought me to a page that said SQL injection detected. Therefore I had to find another way to do the OR query which brought me to the URL:
+We know that each item is being looked up in a database and that the url is being used to query the item. At the end of the url when you select an item is "item?id=0" in which the number 0 is used in the SQL query for the data base. Therefore we can modify the url to inject more SQL code that will return all the items. The SQL command done is like "SELECT ITEM FROM Items WHERE ID EQUAL '?'" where ? is the id number in the url. Therfore we can close the single quote in the url and continue the SQL code and then comment out the rest of the code. I added a SQL query that is always true which was OR 1=1 which brought me to a page that said SQL injection detected. Therefore I had to find another way to do the OR query which brought me to the URL:
 http://1337bank.money:5000/item?id=1' || 1=1 -- -
 
 Since 1=1 is always true, the query would select all the items and brought me to the flag: 
